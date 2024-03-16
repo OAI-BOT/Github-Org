@@ -48,7 +48,7 @@ export default function Home() {
                 <AvatarImage src={session.user?.image as string} />
               </Avatar>
               <div>{session.user?.name}</div>
-              <div>{session.user?.email}</div>
+              <div className="truncate">{session.user?.email}</div>
             </div>
           </CardContent>
           <CardFooter className="flex justify-between">
